@@ -3,44 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VapeStyle - Tienda de Vapes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>VapeStyle - Tu tienda de vapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #00ffff;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>VapeStyle</h1>
-        <nav>
-            <ul>
-                <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                <li><a href="#productos">Qué Vendemos</a></li>
-                <li><a href="#reseñas">Reseñas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Bienvenido a VapeStyle</h1>
+        <p>Tu tienda de vapes premium</p>
     </header>
-    
+
+    <nav>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#productos">Qué vendemos</a>
+        <a href="#envio">Cómo es nuestro envío</a>
+        <a href="#metodos-pago">Métodos de pago</a>
+        <a href="#reseñas">Reseñas</a>
+    </nav>
+
     <section id="quienes-somos">
-        <h2>Quiénes Somos</h2>
-        <p>Somos VapeStyle, una tienda especializada en vapes de la mejor calidad.</p>
+        <h2>Quiénes somos</h2>
+        <p>En VapeStyle, nos especializamos en ofrecer los mejores vapes y accesorios del mercado. Estamos comprometidos con la calidad y la satisfacción de nuestros clientes.</p>
     </section>
-    
+
     <section id="productos">
-        <h2>Qué Vendemos</h2>
-        <p>Aquí encontrarás nuestra selección de vapes y accesorios.</p>
+        <h2>Qué vendemos</h2>
+        <p>En nuestra tienda encontrarás una amplia gama de vapes de las marcas más reconocidas, así como accesorios exclusivos para mejorar tu experiencia.</p>
     </section>
-    
+
+    <section id="envio">
+        <h2>Cómo es nuestro envío</h2>
+        <p>Realizamos envíos a todo el país. Los tiempos de entrega y el costo varían según la ubicación. Todos los envíos son rápidos y seguros.</p>
+    </section>
+
+    <section id="metodos-pago">
+        <h2>Métodos de pago</h2>
+        <p>Aceptamos pagos a través de tarjetas de crédito, débito y transferencias bancarias. Todos los métodos son 100% seguros.</p>
+    </section>
+
     <section id="reseñas">
         <h2>Reseñas</h2>
-        <p>Lee lo que opinan nuestros clientes sobre nuestros productos.</p>
+        <p>¡Pronto podrás dejar tu reseña aquí sobre los productos que compraste! Estaremos felices de saber tu opinión.</p>
     </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Escríbenos a nuestro Instagram @vapesstyle32</p>
-    </section>
-    
+
     <footer>
-        <p>&copy; 2025 VapeStyle - Todos los derechos reservados.</p>
+        <p>&copy; 2025 VapeStyle - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
