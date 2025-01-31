@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VapeStyle es tu tienda de vapes premium. Compra los mejores vapes, accesorios y disfruta de un servicio rápido y seguro.">
+    <meta name="keywords" content="vapes, tienda de vapes, accesorios, envíos rápidos, reseñas de vapes">
+    <meta name="author" content="VapeStyle">
     <title>VapeStyle - Tu tienda de vapes</title>
     <style>
         body {
@@ -69,6 +72,49 @@
         footer p {
             margin: 0;
         }
+
+        /* Formulario de contacto y suscripción */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #00ffff;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        form button {
+            background-color: #00ffff;
+            color: black;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #008c8c;
+        }
+
+        /* Estilo para imágenes */
+        .productos img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            nav {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -85,6 +131,8 @@
         <a href="#envio">Cómo es nuestro envío</a>
         <a href="#metodos-pago">Métodos de pago</a>
         <a href="#reseñas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#suscripcion">Suscripción</a>
     </nav>
 
     <!-- Sección: Quiénes somos -->
@@ -96,7 +144,17 @@
     <!-- Sección: Qué vendemos -->
     <section id="productos">
         <h2>Qué vendemos</h2>
-        <p>En nuestra tienda encontrarás una amplia gama de vapes de las marcas más reconocidas, así como accesorios exclusivos para mejorar tu experiencia.</p>
+        <div class="productos">
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Producto Vape">
+                <p>Vape Modelo 1</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Producto Vape">
+                <p>Vape Modelo 2</p>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </div>
     </section>
 
     <!-- Sección: Cómo es nuestro envío -->
@@ -119,12 +177,51 @@
     <!-- Sección: Reseñas -->
     <section id="reseñas">
         <h2>Reseñas</h2>
-        <p>¡Pronto podrás dejar tu reseña aquí sobre los productos que compraste! Estaremos felices de saber tu opinión.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <button type="submit">Enviar reseña</button>
+        </form>
     </section>
 
-    <!-- Footer de la página -->
+    <!-- Sección: Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="contacto-nombre">Nombre:</label>
+            <input type="text" id="contacto-nombre" name="contacto-nombre" required>
+
+            <label for="contacto-email">Correo electrónico:</label>
+            <input type="email" id="contacto-email" name="contacto-email" required>
+
+            <label for="contacto-mensaje">Mensaje:</label>
+            <textarea id="contacto-mensaje" name="contacto-mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Sección: Suscripción -->
+    <section id="suscripcion">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <form>
+            <label for="suscripcion-email">Correo electrónico:</label>
+            <input type="email" id="suscripcion-email" name="suscripcion-email" required>
+
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- Redes sociales -->
     <footer>
         <p>&copy; 2025 VapeStyle - Todos los derechos reservados</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/VapeStyle" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/VapeStyle" target="_blank">Facebook</a>
     </footer>
 </body>
 </html>
