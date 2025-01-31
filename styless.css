@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapeStyle - Tienda de Vapes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VapeStyle</h1>
+        <nav>
+            <ul>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Qué Vendemos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Somos VapeStyle, una tienda especializada en vapes de la mejor calidad.</p>
+    </section>
+    
+    <section id="productos">
+        <h2>Qué Vendemos</h2>
+        <p>Aquí encontrarás nuestra selección de vapes y accesorios.</p>
+    </section>
+    
+    <section id="reseñas">
+        <h2>Reseñas</h2>
+        <p>Lee lo que opinan nuestros clientes sobre nuestros productos.</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escríbenos a nuestro Instagram @vapesstyle32</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 VapeStyle - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
