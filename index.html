@@ -3,226 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VapeStyle es tu tienda de vapes premium. Compra los mejores vapes, accesorios y disfruta de un servicio rápido y seguro.">
-    <meta name="keywords" content="vapes, tienda de vapes, accesorios, envíos rápidos, reseñas de vapes">
-    <meta name="author" content="VapeStyle">
-    <title>VapeStyle - Tu tienda de vapes</title>
+    <title>Servicios Freelance - [Tu Nombre]</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: white;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 30px;
+            background-color: #f4f4f4;
             text-align: center;
-            border-bottom: 3px solid #00ffff;
         }
-        header h1 {
-            color: #00ffff;
-            font-size: 3em;
-            margin: 0;
-        }
-        header p {
-            color: #aaa;
-            font-size: 1.2em;
-        }
-        nav {
-            background-color: #333;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #00ffff;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 8px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #00ffff;
-        }
-        section {
-            padding: 40px;
-            background-color: #222;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        section h2 {
-            color: #00ffff;
-            font-size: 2.5em;
-        }
-        section p {
-            font-size: 1.2em;
-            color: #ddd;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
             padding: 20px;
-            margin-top: 40px;
-        }
-        footer p {
-            margin: 0;
-        }
-
-        /* Formulario de contacto y suscripción */
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 2px solid #00ffff;
-            border-radius: 5px;
-            background-color: #333;
-            color: white;
-        }
-
-        form button {
-            background-color: #00ffff;
-            color: black;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        form button:hover {
-            background-color: #008c8c;
-        }
-
-        /* Estilo para imágenes */
-        .productos img {
-            width: 100%;
-            max-width: 300px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Estilos Responsivos */
-        @media (max-width: 768px) {
-            nav {
-                font-size: 16px;
-            }
-
-            section h2 {
-                font-size: 2em;
-            }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .language-switch {
+            margin-top: 20px;
         }
     </style>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => {
+                el.style.display = el.classList.contains(lang) ? 'block' : 'none';
+            });
+        }
+    </script>
 </head>
-<body>
-    <!-- Header de la página -->
-    <header>
-        <h1>Bienvenido a VapeStyle</h1>
-        <p>Tu tienda de vapes premium</p>
-    </header>
-
-    <!-- Barra de navegación -->
-    <nav>
-        <a href="#quienes-somos">Quiénes somos</a>
-        <a href="#productos">Qué vendemos</a>
-        <a href="#envio">Cómo es nuestro envío</a>
-        <a href="#metodos-pago">Métodos de pago</a>
-        <a href="#reseñas">Reseñas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#suscripcion">Suscripción</a>
-    </nav>
-
-    <!-- Sección: Quiénes somos -->
-    <section id="quienes-somos">
-        <h2>Quiénes somos</h2>
-        <p>En VapeStyle, nos especializamos en ofrecer los mejores vapes y accesorios del mercado. Estamos comprometidos con la calidad y la satisfacción de nuestros clientes.</p>
-    </section>
-
-    <!-- Sección: Qué vendemos -->
-    <section id="productos">
-        <h2>Qué vendemos</h2>
-        <div class="productos">
-            <div>
-                <img src="https://via.placeholder.com/300" alt="Producto Vape">
-                <p>Vape Modelo 1</p>
-            </div>
-            <div>
-                <img src="https://via.placeholder.com/300" alt="Producto Vape">
-                <p>Vape Modelo 2</p>
-            </div>
-            <!-- Agrega más productos aquí -->
+<body onload="switchLanguage('es')">
+    <div class="container">
+        <div class="language-switch">
+            <button onclick="switchLanguage('es')">Español</button>
+            <button onclick="switchLanguage('en')">English</button>
         </div>
-    </section>
-
-    <!-- Sección: Cómo es nuestro envío -->
-    <section id="envio">
-        <h2>Cómo es nuestro envío</h2>
-        <p>Realizamos envíos a todo el país. Los tiempos de entrega y el costo varían según la ubicación. Todos los envíos son rápidos y seguros.</p>
-    </section>
-
-    <!-- Sección: Métodos de pago -->
-    <section id="metodos-pago">
-        <h2>Métodos de pago</h2>
-        <p>Aceptamos pagos a través de:</p>
-        <ul>
-            <li>Tarjetas de crédito y débito</li>
-            <li>Transferencias bancarias</li>
-        </ul>
-        <p>Todos los métodos son 100% seguros.</p>
-    </section>
-
-    <!-- Sección: Reseñas -->
-    <section id="reseñas">
-        <h2>Reseñas</h2>
-        <form>
-<form action="https://forms.gle/uFRU7xqCFWZ4Y4Qn6" method="POST" target="_blank">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="comentario">Comentario:</label>
-            <textarea id="comentario" name="comentario" rows="4" required></textarea>
-
-            <button type="submit">Enviar reseña</button>
-        </form>
-    </section>
-
-    <!-- Sección: Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <label for="contacto-nombre">Nombre:</label>
-            <input type="text" id="contacto-nombre" name="contacto-nombre" required>
-
-            <label for="contacto-email">Correo electrónico:</label>
-            <input type="email" id="contacto-email" name="contacto-email" required>
-
-            <label for="contacto-mensaje">Mensaje:</label>
-            <textarea id="contacto-mensaje" name="contacto-mensaje" rows="4" required></textarea>
-
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </section>
-
-    <!-- Sección: Suscripción -->
-    <section id="suscripcion">
-        <h2>Suscríbete a nuestro boletín</h2>
-        <form>
-            <label for="suscripcion-email">Correo electrónico:</label>
-            <input type="email" id="suscripcion-email" name="suscripcion-email" required>
-
-            <button type="submit">Suscribirse</button>
-        </form>
-    </section>
-
-    <!-- Redes sociales -->
-    <footer>
-        <p>&copy; 2025 VapeStyle - Todos los derechos reservados</p>
-        <p>Síguenos en nuestras redes sociales:</p>
-        <a href="https://www.instagram.com/VapeStyle" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/VapeStyle" target="_blank">Facebook</a>
-    </footer>
+        <div class="lang es">
+            <h1>Bienvenido a mis servicios freelance</h1>
+            <p>Soy un freelancer especializado en transcripción de audio, edición de videos y gestión de redes sociales.</p>
+            <h2>Mis Servicios</h2>
+            <ul>
+                <li>✅ Transcripción de audios y videos a texto</li>
+                <li>✅ Edición de videos para TikTok, YouTube Shorts y Reels</li>
+                <li>✅ Gestión de redes sociales (Instagram, Facebook, TikTok)</li>
+            </ul>
+            <a class="btn" href="https://www.fiverr.com" target="_blank">Contrátame en Fiverr</a>
+        </div>
+        <div class="lang en" style="display:none;">
+            <h1>Welcome to my freelance services</h1>
+            <p>I am a freelancer specializing in audio transcription, video editing, and social media management.</p>
+            <h2>My Services</h2>
+            <ul>
+                <li>✅ Transcription of audio and video to text</li>
+                <li>✅ Video editing for TikTok, YouTube Shorts, and Reels</li>
+                <li>✅ Social media management (Instagram, Facebook, TikTok)</li>
+            </ul>
+            <a class="btn" href="https://www.fiverr.com" target="_blank">Hire me on Fiverr</a>
+        </div>
+    </div>
 </body>
 </html>
