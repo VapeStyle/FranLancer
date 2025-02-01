@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <h1>Fran Lazzaro - Servicios Freelance</h1>
+        <div class="logo">FL</div>
         <nav>
-            <a href="#quienes-somos">¿Quiénes Somos?</a>
+            <a href="#quienes-somos">Inicio</a>
             <a href="#servicios">Servicios</a>
             <a href="#promociones">Promociones</a>
             <a href="#testimonios">Testimonios</a>
@@ -21,61 +21,69 @@
         </nav>
     </header>
     
+    <section id="hero">
+        <h1>Potencia tu presencia digital con mis servicios</h1>
+        <p>Transcripción, edición de video y gestión de redes para llevar tu marca al siguiente nivel.</p>
+        <a href="#servicios" class="btn">Ver Servicios</a>
+    </section>
+    
     <section id="quienes-somos" class="fade-in">
-        <h2>Bienvenido a mis servicios freelance</h2>
-        <p>Soy Fran Lazzaro, un profesional dedicado a ofrecer soluciones en transcripción, edición de video y gestión de redes sociales.</p>
-        <p>Mi misión es ayudarte a potenciar tu contenido y presencia digital con servicios de alta calidad y atención personalizada.</p>
+        <h2>¿Quién soy?</h2>
+        <p>Soy Fran Lazzaro, un experto en soluciones digitales con enfoque en calidad y resultados.</p>
+        <p>Mi compromiso es brindarte un servicio profesional que destaque en el mundo digital.</p>
     </section>
     
     <section id="servicios">
-        <h2>Mis Servicios</h2>
-        <div class="service" onclick="toggleDetails(this)">
-            <h3>📜 Transcripción de Audio y Video</h3>
-            <p>Convierte tu contenido en texto con precisión.</p>
-            <p class="details hidden"><strong>Beneficios:</strong> Ahorro de tiempo, accesibilidad, mejora SEO y facilidad de referencia.</p>
-            <p class="details hidden"><strong>Desde:</strong> $1.5 por cada 5 minutos de audio.</p>
-        </div>
-        <div class="service" onclick="toggleDetails(this)">
-            <h3>🎬 Edición de Videos</h3>
-            <p>Edición profesional con efectos, transiciones y optimización.</p>
-            <p class="details hidden"><strong>Beneficios:</strong> Mayor engagement, calidad visual mejorada y optimización para redes sociales.</p>
-            <p class="details hidden"><strong>Desde:</strong> $4 por video de hasta 1 minuto.</p>
-        </div>
-        <div class="service" onclick="toggleDetails(this)">
-            <h3>📱 Gestión de Redes Sociales</h3>
-            <p>Optimización y estrategias para el crecimiento de tu marca.</p>
-            <p class="details hidden"><strong>Beneficios:</strong> Crecimiento orgánico, fidelización de audiencia y aumento de interacciones.</p>
-            <p class="details hidden"><strong>Desde:</strong> $25 por mes.</p>
+        <h2>Servicios</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>📜 Transcripción</h3>
+                <p>Convierte tu contenido en texto con alta precisión.</p>
+                <p><strong>Beneficios:</strong> SEO mejorado, accesibilidad, rapidez.</p>
+                <p><strong>Precio:</strong> Desde $1.5 por 5 minutos.</p>
+            </div>
+            <div class="service">
+                <h3>🎬 Edición de Video</h3>
+                <p>Edición profesional con efectos y optimización.</p>
+                <p><strong>Beneficios:</strong> Mayor engagement, calidad visual.</p>
+                <p><strong>Precio:</strong> Desde $4 por video de 1 minuto.</p>
+            </div>
+            <div class="service">
+                <h3>📱 Gestión de Redes</h3>
+                <p>Estrategias de contenido para crecimiento orgánico.</p>
+                <p><strong>Beneficios:</strong> Más interacción y seguidores.</p>
+                <p><strong>Precio:</strong> Desde $25/mes.</p>
+            </div>
         </div>
     </section>
     
     <section id="promociones">
-        <h2>Promociones Especiales</h2>
+        <h2>Promociones</h2>
         <div class="promo">
             <h3>🌟 Pack Emprendedor</h3>
             <p>Transcripción + Edición de video por solo $10.</p>
         </div>
         <div class="promo">
             <h3>🔥 Pack Influencer</h3>
-            <p>Gestión de redes + Edición de videos por solo $40/mes.</p>
+            <p>Gestión de redes + Edición de video por $40/mes.</p>
         </div>
     </section>
     
     <section id="testimonios">
-        <h2>Lo que dicen mis clientes</h2>
+        <h2>Testimonios</h2>
         <div class="testimonio">
-            <p>"Fran hizo un trabajo increíble con mis videos. Muy recomendado!" - Cliente 1</p>
+            <p>"Fran hizo un trabajo increíble con mis videos. Lo recomiendo!" - Cliente 1</p>
         </div>
         <div class="testimonio">
-            <p>"El mejor en transcripción, rapidez y calidad garantizada." - Cliente 2</p>
+            <p>"Transcripción rápida y precisa. Excelente servicio!" - Cliente 2</p>
         </div>
     </section>
     
     <section id="faq">
         <h2>Preguntas Frecuentes</h2>
-        <p><strong>¿Por qué contratarme?</strong> Experiencia, calidad y compromiso con cada proyecto.</p>
-        <p><strong>¿Tiempo de entrega?</strong> 24 a 48 horas dependiendo del proyecto.</p>
-        <p><strong>¿Puedo solicitar modificaciones?</strong> Sí, incluyo revisiones para garantizar tu satisfacción.</p>
+        <p><strong>¿Por qué contratarme?</strong> Experiencia, calidad y compromiso.</p>
+        <p><strong>¿Tiempo de entrega?</strong> 24-48 horas según el proyecto.</p>
+        <p><strong>¿Puedo pedir revisiones?</strong> Sí, incluyo modificaciones.</p>
     </section>
     
     <section id="contacto">
@@ -83,11 +91,19 @@
         <p>📩 Email: <a href="mailto:franlazzaro723@gmail.com">franlazzaro723@gmail.com</a></p>
     </section>
     
+    <footer>
+        <p>&copy; 2025 Fran Lazzaro | Todos los derechos reservados.</p>
+    </footer>
+    
     <script>
-        function toggleDetails(element) {
-            let details = element.querySelectorAll('.details');
-            details.forEach(detail => detail.classList.toggle('hidden'));
-        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInElements = document.querySelectorAll(".fade-in");
+            fadeInElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transition = "opacity 1.5s ease-in-out";
+                setTimeout(() => { el.style.opacity = 1; }, 500);
+            });
+        });
     </script>
 </body>
 </html>
